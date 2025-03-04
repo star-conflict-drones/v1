@@ -1,0 +1,227 @@
+{
+"multilangmap": [
+	{
+		"imageposition" : 2,
+		"locname" : "Captured Dreadnought",
+		"sysname" : "PRIDE",
+		"droneposition" : "X: -545 Y: 75 Z: -245",
+		"Ml" : "2",
+		"id" : 3
+	},
+	{
+		"imageposition" : 7,
+		"locname" : "Iridium Mines",
+		"sysname" : "ONTREGOS",
+		"droneposition" : "X: -690 Y: -165 Z: 340",
+		"Ml" : "7",
+		"id" : 8
+	},
+	{
+		"imageposition" : 8,
+		"locname" : "Station 'Guardian-17'",
+		"sysname" : "ONTREGOS",
+		"droneposition" : "X: 5 Y: 170 Z: -280",
+		"Ml" : "8",
+		"id" : 9
+	},
+	{
+		"imageposition" : 12,
+		"locname" : "Raider Range",
+		"sysname" : "CAYDE",
+		"droneposition" : "X: 600 Y: -670 Z: -390",
+		"Ml" : "12",
+		"id" : 13
+	},
+	{
+		"imageposition" : 13,
+		"locname" : "Blackwood' Shipyard",
+		"sysname" : "MENAR",
+		"droneposition" : "X: 435 Y: 205 Z: 1050",
+		"Ml" : "13",
+		"id" : 14
+	},
+	{
+		"imageposition" : 21,
+		"locname" : "'Northstar' Crash Site",
+		"sysname" : "YDRA",
+		"droneposition" : "X: -910 Y: -50 Z: 410",
+		"Ml" : "21",
+		"id" : 22
+	},
+	{
+		"imageposition" : 22,
+		"locname" : "Naberia-392 complex",
+		"sysname" : "YDRA",
+		"droneposition" : "X: -10 Y: -40 Z: -180",
+		"Ml" : "22",
+		"id" : 23
+	},
+	{
+		"imageposition" : 24,
+		"locname" : "'Alpha-7' Complex",
+		"sysname" : "SCHEAT",
+		"droneposition" : "X: -1255 Y: 85 Z: -295",
+		"Ml" : "24",
+		"id" : 25
+	},
+	{
+		"imageposition" : 25,
+		"locname" : "Abandoned 'Ellydium' plant",
+		"sysname" : "VELORUM",
+		"droneposition" : "X: 380 Y: -120 Z: 240",
+		"Ml" : "25",
+		"id" : 26
+	},
+	{
+		"imageposition" : 27,
+		"locname" : "Processing rig",
+		"sysname" : "VELORUM",
+		"droneposition" : "X: -1070 Y: -165 Z: -230",
+		"Ml" : "27",
+		"id" : 28
+	},
+	{
+		"imageposition" : 28,
+		"locname" : "Water Harvest",
+		"sysname" : "VELORUM",
+		"droneposition" : "X: 900 Y: -65 Z: 545",
+		"Ml" : "28",
+		"id" : 29
+	},
+	{
+		"imageposition" : 30,
+		"locname" : "Smugglers Hideout",
+		"sysname" : "PROCYON",
+		"droneposition" : "X: -500 Y: -765 Z: 70",
+		"Ml" : "30",
+		"id" : 31
+	},
+	{
+		"imageposition" : 32,
+		"locname" : "Research Center",
+		"sysname" : "EREBUS",
+		"droneposition" : "X: 640 Y: -610 Z: 440",
+		"Ml" : "32",
+		"id" : 33
+	},
+	{
+		"imageposition" : 34,
+		"locname" : "Service Shop",
+		"sysname" : "OLYMPUS",
+		"droneposition" : "X: -175 Y: -190 Z: 595",
+		"Ml" : "34",
+		"id" : 35
+	},
+	{
+		"imageposition" : 35,
+		"locname" : "Ice Belt",
+		"sysname" : "OLYMPUS",
+		"droneposition" : "X: 675 Y: -190 Z: -240",
+		"Ml" : "35",
+		"id" : 36
+	},
+	{
+		"imageposition" : 38,
+		"locname" : "Colonization Hub",
+		"sysname" : "OLYMPUS",
+		"droneposition" : "X: 120 Y: -280 Z: 35",
+		"Ml" : "38",
+		"id" : 39
+	},
+	{
+		"imageposition" : 39,
+		"locname" : "Station 'New Eden'",
+		"sysname" : "OLYMPUS",
+		"droneposition" : "X: -40 Y: -85 Z: -935",
+		"Ml" : "39",
+		"id" : 40
+	},
+	{
+		"imageposition" : 42,
+		"locname" : "Derelict Stronghold",
+		"sysname" : "HALDON",
+		"droneposition" : "X: 785 Y: -330 Z: -370",
+		"Ml" : "42",
+		"id" : 43
+	},
+	{
+		"imageposition" : 44,
+		"locname" : "Eastern Mining Station",
+		"sysname" : "NEW CERES",
+		"droneposition" : "X: -680 Y: -160 Z: -330",
+		"Ml" : "44",
+		"id" : 45
+	},
+	{
+		"imageposition" : 48,
+		"locname" : "Abandoned Outpost",
+		"sysname" : "SOLARIS",
+		"droneposition" : "X: -120 Y: -285 Z: -890",
+		"Ml" : "48",
+		"id" : 49
+	},
+	{
+		"imageposition" : 50,
+		"locname" : "Terramorphing Station",
+		"sysname" : "SOLARIS",
+		"droneposition" : "X: 225 Y: 445 Z: 385",
+		"Ml" : "50",
+		"id" : 51
+	},
+	{
+		"imageposition" : 54,
+		"locname" : "Mining Site",
+		"sysname" : "PALLAS",
+		"droneposition" : "X: 425 Y: -275 Z: -545",
+		"Ml" : "54",
+		"id" : 55
+	},
+	{
+		"imageposition" : 55,
+		"locname" : "Station 'Mendes-IX'",
+		"sysname" : "PALLAS",
+		"droneposition" : "X: 35 Y: -145 Z: 445",
+		"Ml" : "55",
+		"id" : 56
+	},
+	{
+		"imageposition" : 59,
+		"locname" : "Gas Harvest Station",
+		"sysname" : "PALLAS",
+		"droneposition" : "X: 425 Y: -585 Z: 240",
+		"Ml" : "59",
+		"id" : 60
+	},
+	{
+		"imageposition" : 63,
+		"locname" : "Iridium Strand",
+		"sysname" : "PROCSSIMA",
+		"droneposition" : "X: 1120 Y: 100 Z: -1065",
+		"Ml" : "63",
+		"id" : 64
+	},
+	{
+		"imageposition" : 68,
+		"locname" : "Sorting Facility",
+		"sysname" : "MEZZA",
+		"droneposition" : "X: -730 Y: -150 Z: -475",
+		"Ml" : "68",
+		"id" : 69
+	},
+	{
+		"imageposition" : 71,
+		"locname" : "Excavation site №6",
+		"sysname" : "MORAG",
+		"droneposition" : "X: -465 Y: 825 Z: -330",
+		"Ml" : "71",
+		"id" : 76
+	},
+	{
+		"imageposition" : 73,
+		"locname" : "PB-42",
+		"sysname" : "VIOR",
+		"droneposition" : "X: -355 Y: -200 Z: -10",
+		"Ml" : "73",
+		"id" : 78
+	}
+]}

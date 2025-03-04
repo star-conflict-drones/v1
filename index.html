@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js">
+		</script>
+	</head>
+	<body id="body">
+		<script>
+			const data = {
+				"multilangmap": [
+					{
+						"imageposition" : 2,
+						"locname" : "Captured Dreadnought",
+						"sysname" : "PRIDE",
+						"droneposition" : "X: -545 Y: 75 Z: -245",
+						"Ml" : "2",
+						"id" : 3
+					},
+					{
+						"imageposition" : 7,
+						"locname" : "Iridium Mines",
+						"sysname" : "ONTREGOS",
+						"droneposition" : "X: -690 Y: -165 Z: 340",
+						"Ml" : "7",
+						"id" : 8
+					},
+					{
+						"imageposition" : 8,
+						"locname" : "Station 'Guardian-17'",
+						"sysname" : "ONTREGOS",
+						"droneposition" : "X: 5 Y: 170 Z: -280",
+						"Ml" : "8",
+						"id" : 9
+					},
+					{
+						"imageposition" : 12,
+						"locname" : "Raider Range",
+						"sysname" : "CAYDE",
+						"droneposition" : "X: 600 Y: -670 Z: -390",
+						"Ml" : "12",
+						"id" : 13
+					},
+					{
+						"imageposition" : 13,
+						"locname" : "Blackwood' Shipyard",
+						"sysname" : "MENAR",
+						"droneposition" : "X: 435 Y: 205 Z: 1050",
+						"Ml" : "13",
+						"id" : 14
+					},
+					{
+						"imageposition" : 21,
+						"locname" : "'Northstar' Crash Site",
+						"sysname" : "YDRA",
+						"droneposition" : "X: -910 Y: -50 Z: 410",
+						"Ml" : "21",
+						"id" : 22
+					},
+					{
+						"imageposition" : 22,
+						"locname" : "Naberia-392 complex",
+						"sysname" : "YDRA",
+						"droneposition" : "X: -10 Y: -40 Z: -180",
+						"Ml" : "22",
+						"id" : 23
+					},
+					{
+						"imageposition" : 24,
+						"locname" : "'Alpha-7' Complex",
+						"sysname" : "SCHEAT",
+						"droneposition" : "X: -1255 Y: 85 Z: -295",
+						"Ml" : "24",
+						"id" : 25
+					},
+					{
+						"imageposition" : 25,
+						"locname" : "Abandoned 'Ellydium' plant",
+						"sysname" : "VELORUM",
+						"droneposition" : "X: 380 Y: -120 Z: 240",
+						"Ml" : "25",
+						"id" : 26
+					},
+					{
+						"imageposition" : 27,
+						"locname" : "Processing rig",
+						"sysname" : "VELORUM",
+						"droneposition" : "X: -1070 Y: -165 Z: -230",
+						"Ml" : "27",
+						"id" : 28
+					},
+					{
+						"imageposition" : 28,
+						"locname" : "Water Harvest",
+						"sysname" : "VELORUM",
+						"droneposition" : "X: 900 Y: -65 Z: 545",
+						"Ml" : "28",
+						"id" : 29
+					},
+					{
+						"imageposition" : 30,
+						"locname" : "Smugglers Hideout",
+						"sysname" : "PROCYON",
+						"droneposition" : "X: -500 Y: -765 Z: 70",
+						"Ml" : "30",
+						"id" : 31
+					},
+					{
+						"imageposition" : 32,
+						"locname" : "Research Center",
+						"sysname" : "EREBUS",
+						"droneposition" : "X: 640 Y: -610 Z: 440",
+						"Ml" : "32",
+						"id" : 33
+					},
+					{
+						"imageposition" : 34,
+						"locname" : "Service Shop",
+						"sysname" : "OLYMPUS",
+						"droneposition" : "X: -175 Y: -190 Z: 595",
+						"Ml" : "34",
+						"id" : 35
+					},
+					{
+						"imageposition" : 35,
+						"locname" : "Ice Belt",
+						"sysname" : "OLYMPUS",
+						"droneposition" : "X: 675 Y: -190 Z: -240",
+						"Ml" : "35",
+						"id" : 36
+					},
+					{
+						"imageposition" : 38,
+						"locname" : "Colonization Hub",
+						"sysname" : "OLYMPUS",
+						"droneposition" : "X: 120 Y: -280 Z: 35",
+						"Ml" : "38",
+						"id" : 39
+					},
+					{
+						"imageposition" : 39,
+						"locname" : "Station 'New Eden'",
+						"sysname" : "OLYMPUS",
+						"droneposition" : "X: -40 Y: -85 Z: -935",
+						"Ml" : "39",
+						"id" : 40
+					},
+					{
+						"imageposition" : 42,
+						"locname" : "Derelict Stronghold",
+						"sysname" : "HALDON",
+						"droneposition" : "X: 785 Y: -330 Z: -370",
+						"Ml" : "42",
+						"id" : 43
+					},
+					{
+						"imageposition" : 44,
+						"locname" : "Eastern Mining Station",
+						"sysname" : "NEW CERES",
+						"droneposition" : "X: -680 Y: -160 Z: -330",
+						"Ml" : "44",
+						"id" : 45
+					},
+					{
+						"imageposition" : 48,
+						"locname" : "Abandoned Outpost",
+						"sysname" : "SOLARIS",
+						"droneposition" : "X: -120 Y: -285 Z: -890",
+						"Ml" : "48",
+						"id" : 49
+					},
+					{
+						"imageposition" : 50,
+						"locname" : "Terramorphing Station",
+						"sysname" : "SOLARIS",
+						"droneposition" : "X: 225 Y: 445 Z: 385",
+						"Ml" : "50",
+						"id" : 51
+					},
+					{
+						"imageposition" : 54,
+						"locname" : "Mining Site",
+						"sysname" : "PALLAS",
+						"droneposition" : "X: 425 Y: -275 Z: -545",
+						"Ml" : "54",
+						"id" : 55
+					},
+					{
+						"imageposition" : 55,
+						"locname" : "Station 'Mendes-IX'",
+						"sysname" : "PALLAS",
+						"droneposition" : "X: 35 Y: -145 Z: 445",
+						"Ml" : "55",
+						"id" : 56
+					},
+					{
+						"imageposition" : 59,
+						"locname" : "Gas Harvest Station",
+						"sysname" : "PALLAS",
+						"droneposition" : "X: 425 Y: -585 Z: 240",
+						"Ml" : "59",
+						"id" : 60
+					},
+					{
+						"imageposition" : 63,
+						"locname" : "Iridium Strand",
+						"sysname" : "PROCSSIMA",
+						"droneposition" : "X: 1120 Y: 100 Z: -1065",
+						"Ml" : "63",
+						"id" : 64
+					},
+					{
+						"imageposition" : 68,
+						"locname" : "Sorting Facility",
+						"sysname" : "MEZZA",
+						"droneposition" : "X: -730 Y: -150 Z: -475",
+						"Ml" : "68",
+						"id" : 69
+					},
+					{
+						"imageposition" : 71,
+						"locname" : "Excavation site №6",
+						"sysname" : "MORAG",
+						"droneposition" : "X: -465 Y: 825 Z: -330",
+						"Ml" : "71",
+						"id" : 76
+					},
+					{
+						"imageposition" : 73,
+						"locname" : "PB-42",
+						"sysname" : "VIOR",
+						"droneposition" : "X: -355 Y: -200 Z: -10",
+						"Ml" : "73",
+						"id" : 78
+					}
+				]
+			};
+			let htmlContent = `
+				<div class="loading">
+					<div class="rotating">
+						<div class="rotating2">
+						</div>
+					</div>
+					<div class="loadingtext">
+						Loading
+					</div>
+				</div>
+				<div class="Nav" style="display:none;">
+					<div class="ikona">
+					</div>
+					<div class="lange2">
+						<input class="inputlang inputlang2" type="text" id="wyszukiwarka" onkeyup="wyszukiwarka()">
+					</div>
+				</div>
+				<div class="sbox0" style="display:none;">
+					<div class="sbox" id="sbox">`;
+						data.multilangmap.forEach(item => {
+							htmlContent += `
+								<hhh class="sbox1 clickshow" target="${item.imageposition}">
+									<div class="box1 box1a${item.imageposition}" style="background-position: calc(0px) calc(-50px * ${item.imageposition})">
+									</div>
+									<bbb class="textbox2">
+										<a>${item.sysname}</a>
+										<br>
+										<a>${item.locname}</a>			
+									</bbb>
+								</hhh>`;
+						});
+				htmlContent += `</div>`;
+				data.multilangmap.forEach(item => {
+					htmlContent += `
+					<div class="ibox show${item.imageposition}" id="txtHint">
+						<div class="box1 box1a${item.imageposition}" style="background-position: calc(0px) calc(-50px * ${item.imageposition})">
+						</div>
+						<bbb class="textbox2">
+							<a>${item.sysname}</a>
+							<br>
+							<a>${item.locname}</a>			
+						</bbb>
+						<div class="textbox1 textbox1a${item.imageposition}" style="display: block; margin-left: 10px;">
+							<a class="en">
+								Transport drone: ${item.droneposition}
+							</a>
+						</div>
+						<div class="hx2">
+							<a><b>&times;</b></a>
+						</div>
+						<div class="map mapa${item.imageposition}" style="background-image: url(./images/M${item.imageposition}.jpg); display: flex;">
+							<div class="topmap topmap${item.imageposition}" style="background-image: url(./images/buton.png); display: block;">
+							</div>
+						</div>
+						<div class="map2 map2a${item.imageposition}" style="background-image: url(./images/l${item.imageposition}.jpg);">
+						</div>
+						<div class="text" style="text-shadow: 0 0 4px black; display:none; position: absolute; text-align: center;  color: red;">
+							<b>${item.droneposition}</b>
+						</div>
+					</div>`;
+				});
+				htmlContent += `</div>`;
+			document.getElementById('body').innerHTML = htmlContent;
+		</script>
+		
+		<script>		
+			jQuery
+			(
+				function()
+				{
+					jQuery(document).ready(function($) {
+						$('.clickshow').click(function() {
+							jQuery('.ibox').css('display', 'none');
+							var systemid = $(this).attr('target'); // Pobranie wartości z atrybutu data-imageposition
+							$('.show' + systemid).css('display', 'block');
+						});
+					});
+				}
+			);
+			jQuery('.clickshow').click
+			(
+				function()
+				{
+					var h70 = 70;
+					var marg6 = 6;
+					var marg8 = 8;
+					var marg9 = 9;
+					var NavObl1 = Math.floor(($(window).height() - 46 - 1 - 6) / 78);
+					var NavObl2 = NavObl1 * 78;
+					var NavObl3 = ($(window).height() - 46 - 1 - 6) - NavObl2;
+					var NavObl4 = NavObl1 * 2;
+					var NavObl5 = Math.floor(NavObl3 / NavObl4);
+					var NavObl6 = NavObl5 * NavObl4;
+					var NavObl7 = NavObl3 - NavObl6;
+					var sbox0 = $(window).height() - Nav - 13;
+					if(NavObl3 < NavObl4)
+					{
+						var Nav = 46 + NavObl7;
+						var sbox1 = 78 - marg8;
+						var box1Margin = marg9;
+					}
+					else
+					{ 
+						var Nav = 46 + NavObl7;
+						var sbox1 = h70 + (2 * NavObl5);
+						var box1Margin = (sbox1 - 50 - 2) / 2;
+					}
+					var scroll = sbox1 + 2 + 6;
+					var map = 208;
+					var map2 = 52;
+					jQuery('.map').css('width', map).delay(10);
+					jQuery('.map').css('height', map);
+					jQuery('.map').css('background-size', map);
+					jQuery('.map').css('position', 'unset');
+					jQuery('.map').css('background-position', '0');
+					jQuery('.map').css('padding', '0');
+					jQuery('.map').css('border-radius', '50%');
+					jQuery('.topmap').css('width', map2);
+					jQuery('.topmap').css('height', map2);
+					jQuery('.topmap').css('background-size', map2);
+					jQuery('.topmap').css('margin', '59.9% auto');
+					jQuery('.topmap').css('border-radius', '50%');
+					jQuery('.map2').css('display', 'none');
+					jQuery('.map').css('border', '1px solid white');
+					jQuery(".Nav").css('height', Nav);
+					jQuery(".sbox").css('height', sbox0);
+					jQuery(".sbox").css('width', 'auto');
+					jQuery(".sbox1").css('height', sbox1);
+					jQuery(".sbox0").css('grid-template-areas', `'a1 a2 a2 a2'`);
+					jQuery(".box1").css('margin', box1Margin);
+					jQuery(".textbox2").css('padding', box1Margin);
+					jQuery(".box1-1").css('margin-right', box1Margin);
+					jQuery('.box').css('padding', box1Margin);
+					jQuery(".textbox").css('padding-bottom', box1Margin);	
+					jQuery(".textbox1").css('padding-top', box1Margin);	
+					jQuery(".textbox1").css('padding-bottom', box1Margin);
+					jQuery(".hx2").css('right', box1Margin);	
+					jQuery(".hx2").css('top', box1Margin);	
+					jQuery(".ibox").css('height', $(".sbox").height() - 2);
+					jQuery('.text').css('position', 'fixed');
+					jQuery('.text').css('left', '0');
+					jQuery('.text').css('top', '6px');
+					jQuery('.text').css('width', '100vw');
+					if ($(window).width() <= $(window).height())
+					{
+						jQuery(".sbox0").css('display', 'block');
+						jQuery(".sbox").css('height', (sbox1 + 6) * 4 + 2);
+						jQuery(".sbox").css('margin-bottom', '6px');
+						jQuery(".ibox").css('height', $(window).height() - $(".sbox").height()  - $(".Nav").height() - 21);
+						jQuery(".ibox").css('width', 'calc(100% - 2px)');
+					}
+					else 
+					{
+						jQuery(".sbox").css('margin-bottom', '0');
+						jQuery(".sbox0").css('display', 'grid');
+						jQuery(".ibox").css('height', $(".sbox").height() - 2);
+						jQuery(".ibox").css('width', 'uset');
+					}
+				}
+			);
+		</script>
+		<script>
+			function wyszukiwarka() 
+			{
+				var input, filtr, ul, li, a, i, txtValue;
+				input = document.getElementById("wyszukiwarka");
+				filtr = input.value.toUpperCase();
+				ul = document.getElementById("sbox");
+				li = ul.getElementsByTagName("hhh");
+				for (i = 0; i < li.length; i++) 
+				{
+					a = li[i].getElementsByTagName("bbb")[0];
+					if (li) 
+					{
+						txtValue = a.textContent || a.innerText;
+						if (txtValue.toUpperCase().indexOf(filtr) > -1) 
+						{
+							li[i].style.display = "";
+						} 
+						else 
+						{
+							li[i].style.display = "none";
+						}
+					}       
+				}
+			};
+		</script>
+		<script>
+			jQuery(function () {
+				function updateLayout() {
+					$('.sbox').scrollTop(0);
+					var windowHeight = $(window).height();
+					var baseHeight = windowHeight - 46 - 1 - 6;
+					var navObl1 = Math.floor(baseHeight / 78);
+					var navObl2 = navObl1 * 78;
+					var navObl3 = baseHeight - navObl2;
+					var navObl4 = navObl1 * 2;
+					var navObl5 = Math.floor(navObl3 / navObl4);
+					var navObl6 = navObl5 * navObl4;
+					var navObl7 = navObl3 - navObl6;
+					var Nav = 46 + navObl7;
+					var sbox0 = $(window).height() - Nav - 13;
+					var sbox1 = 70 + (navObl3 >= navObl4 ? 2 * navObl5 : 0);
+					var box1Margin = (sbox1 - 50 - 2) / 2;
+					var map = 208, map2 = 52;
+					jQuery('.text').css('display', 'none');
+					jQuery('.map').css('width', map);
+					jQuery('.map').css('height', map);
+					jQuery('.map').css('background-size', map);
+					jQuery('.map').css('position', 'unset');
+					jQuery('.map').css('background-position', '0');
+					jQuery('.map').css('padding', '0');
+					jQuery('.map').css('border-radius', '50%');
+					jQuery('.map').css('border', '1px solid white');
+					jQuery('.topmap').css('width', map2);
+					jQuery('.topmap').css('height', map2);
+					jQuery('.topmap').css('background-size', map2);
+					jQuery('.topmap').css('margin', '59.9% auto');
+					jQuery('.topmap').css('border-radius', '50%');
+					jQuery('.map2').css('display', 'none');
+					jQuery(".Nav").css('height', Nav);
+					jQuery(".sbox").css('height', sbox0);
+					jQuery(".sbox1").css('height', sbox1);
+					jQuery(".ibox").css('height', $(".sbox0").height() - 2);
+					jQuery(".box1").css('margin', box1Margin);
+					jQuery(".textbox2").css('padding', box1Margin);
+					jQuery(".box1-1").css('margin-right', box1Margin);
+					jQuery('.box').css('padding', box1Margin);
+					jQuery(".textbox").css('padding-bottom', box1Margin);
+					jQuery(".textbox1").css('padding-top', box1Margin);
+					jQuery(".textbox1").css('padding-bottom', box1Margin);
+					jQuery(".hx2").css('right', box1Margin);
+					jQuery(".hx2").css('top', box1Margin);	
+					jQuery('.hx2').css('display', 'none');
+					if ($(window).width() <= $(window).height() && $('.ibox').filter(function() {
+						return $(this).css('display') === 'block';
+					}).length > 0)
+					{
+						jQuery(".sbox0").css('display', 'block');
+						jQuery(".sbox").css('height', (sbox1 + 6) * 4 + 2);
+						jQuery(".sbox").css('margin-bottom', '6px');
+						jQuery(".ibox").css('height', $(window).height() - $(".sbox").height()  - $(".Nav").height() - 21);
+						jQuery(".ibox").css('width', 'calc(100% - 2px)');
+					}
+					 else if ($(window).width() <= $(window).height())
+					{
+						jQuery(".sbox0").css('display', 'block');
+						jQuery(".ibox").css('width', 'calc(100% - 2px)');
+					}
+					
+					else 
+					{
+						jQuery(".sbox").css('margin-bottom', '0');
+						jQuery(".sbox0").css('display', 'grid');
+						jQuery(".ibox").css('height', $(".sbox").height() - 2);
+						jQuery(".ibox").css('width', 'uset');
+					}
+					jQuery('.topmap').click
+					(
+						function(event) 
+						{
+							event.stopPropagation();
+							jQuery('.text').css('display', 'block');
+							jQuery('.map').css('background-color', 'rgba(0,0,0,0.0)');
+							jQuery('.map2').css('display', 'block');
+							jQuery('.map2').css('position', 'fixed');
+							jQuery('.map2').css('border-radius', '0%');
+							jQuery('.map2').css('top', '0');
+							jQuery('.map2').css('left', '0');
+							jQuery('.map2').css('background-repeat', 'no-repeat');
+							jQuery('.map2').css('background-color', 'rgba(0,0,0,0.7)');
+							jQuery('.map2').css('border', '0px solid white');
+							jQuery('.hx2').css('display', 'flex');	
+							jQuery(".hx2").css('height', '20px');
+							jQuery(".hx2").css('width', '20px');
+							jQuery(".hx2").css('font-size', '15px');
+							if($(window).width() >= $(window).height())
+							{
+								jQuery('.text').css('top', '6px');
+								jQuery(".hx2").css('border-radius', '0.3125vw');
+								jQuery('.map2').css('background-position', ($(window).width() - $(window).height()) / 2 + 'px 0');
+								jQuery('.map2').css('padding', '0 calc(' + ($(window).width() - $(window).height()) / 2 + 'px)');
+								jQuery('.map2').css('height', $(window).height());
+								jQuery('.map2').css('background-size', $(window).height());
+								jQuery('.map2').css('width', $(window).height());
+							}
+							else
+							{
+								jQuery('.text').css('top', ($(window).height() - $(window).width()) / 2 + 6);
+								jQuery(".hx2").css('border-radius', '0.3125vh');	
+								jQuery('.map2').css('background-position', '0 ' + ($(window).height() - $(window).width()) / 2 + 'px');
+								jQuery('.map2').css('padding', ($(window).height() - $(window).width()) / 2 + 'px 0');
+								jQuery('.map2').css('height', $(window).width());
+								jQuery('.map2').css('background-size', $(window).width());
+								jQuery('.map2').css('width', $(window).width());
+							}
+					});
+					jQuery('.map').click
+					(
+						function()
+						{
+							jQuery('.text').css('display', 'block');
+							jQuery('.map').css('position', 'fixed');
+							jQuery('.map').css('border-radius', '0%');
+							jQuery('.map').css('left', '0');
+							jQuery('.map').css('top', '0');
+							jQuery('.map').css('background-repeat', 'no-repeat');
+							jQuery('.map').css('background-color', 'rgba(0,0,0,0.7)');
+							jQuery('.map').css('border', '0px solid white');
+							jQuery('.hx2').css('display', 'flex');
+							jQuery(".hx2").css('height', '20px');
+							jQuery(".hx2").css('width', '20px');
+							jQuery(".hx2").css('font-size', '15px');
+							if($(window).width() >= $(window).height())
+							{
+								jQuery('.text').css('top', '6px');
+								jQuery(".hx2").css('border-radius', '0.3125vw');
+								jQuery('.map').css('background-position', ($(window).width() - $(window).height()) / 2 + 'px 0');
+								jQuery('.map').css('padding', '0 calc(' + ($(window).width() - $(window).height()) / 2 + 'px)');
+								jQuery('.map').css('height', $(window).height());
+								jQuery('.map').css('background-size', $(window).height());
+								jQuery('.map').css('width', $(window).height());
+								jQuery('.topmap').css('height', $(window).height() / 4);
+								jQuery('.topmap').css('background-size', $(window).height() / 4);
+								jQuery('.topmap').css('width', $(window).height() / 4);
+							}
+							else
+							{
+								jQuery('.text').css('top', ($(window).height() - $(window).width()) / 2 + 6);
+								jQuery(".hx2").css('border-radius', '0.3125vh');
+								jQuery('.map').css('background-position', '0 ' + ($(window).height() - $(window).width()) / 2 + 'px');
+								jQuery('.map').css('padding', ($(window).height() - $(window).width()) / 2 + 'px 0');
+								jQuery('.map').css('height', $(window).width());
+								jQuery('.map').css('background-size', $(window).width());
+								jQuery('.map').css('width', $(window).width());
+								jQuery('.topmap').css('height', $(window).width() / 4);
+								jQuery('.topmap').css('background-size', $(window).width() / 4);
+								jQuery('.topmap').css('width', $(window).width() / 4);
+							}
+						}
+					);
+					var map = 208;
+					var map2 = 52;
+					jQuery('.hx2').click
+					(
+						function()
+						{
+							jQuery('.text').css('display', 'none');
+							jQuery('.map').css('background-color', 'rgba(0,0,0,0.0)');
+							jQuery('.map').css('height', map);
+							jQuery('.map').css('width', map);
+							jQuery('.map').css('background-size', map);
+							jQuery('.map').css('position', 'unset');
+							jQuery('.map').css('background-position', '0');
+							jQuery('.map').css('border-radius', '50%');
+							jQuery('.map').css('padding', '0');
+							jQuery('.map').css('border', '1px solid white');
+							jQuery('.map2').css('display', 'none');
+							jQuery('.topmap').css('width', map2);
+							jQuery('.topmap').css('height', map2);
+							jQuery('.topmap').css('background-size', map2);
+							jQuery('.hx2').css('display', 'none');
+						}
+					);
+				}
+				updateLayout();
+				$(window).resize(updateLayout);
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				var scrollAmount = $('.sbox1').height() + 8;
+				
+				// Aktualizacja wartości scrolla przy zmianie rozmiaru okna
+				$(window).resize(function () {
+					scrollAmount = $('.sbox1').height() + 8;
+				});
+
+				// Obsługa klawiszy
+				$(document).keyup(function (e) {
+					if (e.keyCode === 27) $('.hx2').click();
+					if (e.keyCode === 38 || e.keyCode === 87) $('#sbox')[0].scrollBy(0, -scrollAmount);
+					if (e.keyCode === 40 || e.keyCode === 83) $('#sbox')[0].scrollBy(0, scrollAmount);
+				});
+
+				// Obsługa przewijania myszką
+				$('.sbox').on('wheel', function (event) {
+					if (event.originalEvent.deltaY > 0) {
+						$('#sbox')[0].scrollBy(0, scrollAmount);
+					} else {
+						$('#sbox')[0].scrollBy(0, -scrollAmount);
+					}
+				});
+
+				// Obsługa przewijania na urządzeniach mobilnych (dotyk)
+				var startY = 0;
+
+				$('.sbox').on('touchstart', function (event) {
+					startY = event.touches[0].clientY;
+				});
+
+				$('.sbox').on('touchmove', function (event) {
+					var endY = event.touches[0].clientY;
+					var deltaY = startY - endY;
+
+					if (Math.abs(deltaY) > 10) { // Zapobiega drobnym ruchom
+						if (deltaY > 0) {
+							$('#sbox')[0].scrollBy(0, scrollAmount);
+						} else {
+							$('#sbox')[0].scrollBy(0, -scrollAmount);
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			$(window).load
+			(
+				function()
+				{
+					$(".loading").hide();
+				}
+			);
+		</script>
+		<script>
+					jQuery('.Nav').css('display', 'flex');
+					jQuery('.sbox0').css('display', 'grid');
+					
+		</script>
+	</body>
+</html>
+
